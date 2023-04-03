@@ -3,18 +3,13 @@
 
 ## Features
 
-- [#381] Rowing - now captures AvgStrokeDistance
-- [#374] Rowing - can now configure PreferredLapType for Row workouts
-- [#358] Begin publishing Docker Images on GitHub Packages
-- [#358] Introduce new Docker major version Release tag - allows you to pin to all updates to a major version i.e. `v3`
-- [#366] WebUI - Can now Clear your Peloton or Garmin Password via the UI
+- [#447] Map Exercises for Strength and Core classes when Class Plan information is available
+- Added support for mapping several more Exercises from Peloton to Garmin
 
-## Changes
+## Fixes
 
-- [#384] Bump dependency versions + Pull latest Garmin SDK (21.94)
-- [#366] WebUI - Credentials are now stored encrypted
-	- A one time migration step will happen on startup to encrypt your existing credentials
-	- If a problem occurs you may have to re-configure your Peloton and Garmin credentials
-- [#399] WebUI - Existing settings will be migrated to a new format associated with a UserId
-	- A one time migration step will happen on startup to move existing settings to be associated with a UserId
-	- If a problem occurs you may have to re-configure your settings
+- [#457] P2G fails with Ride Id is null (Just Run/Just Ride workouts)
+
+## Housekeeping
+
+- [#448] Dependency Bumps and pulled in latest Garmin SDK
